@@ -1,0 +1,407 @@
+/* Reset y Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #8BC34A;
+    --dark-green: #558B2F;
+    --light-beige: #D9CCBC;
+    --cream: #F5F0E8;
+    --white: #FFFFFF;
+    --text-dark: #333333;
+    --text-gray: #666666;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--light-beige);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--light-beige);
+    padding: 20px 0 0;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--light-beige);
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.navigation {
+    background-color: var(--primary-green);
+    margin-top: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--dark-green);
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: var(--cream);
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-green);
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.benefits-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    margin-bottom: 25px;
+    color: var(--text-dark);
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.benefit-item strong {
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+/* Banner Section */
+.banner-section {
+    background-color: var(--cream);
+    padding: 40px 0;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--cream);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-title {
+    color: var(--primary-green);
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.cta-subtitle {
+    color: var(--text-gray);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: #3E7B1F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: var(--light-beige);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter-title {
+    color: var(--primary-green);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.newsletter-subtitle {
+    color: var(--text-gray);
+    font-size: 15px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.email-input {
+    flex: 1;
+    min-width: 250px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+    border-color: var(--primary-green);
+}
+
+.btn-submit {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Discount Section */
+.discount-section {
+    background-color: var(--light-beige);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.discount-text {
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.discount-highlight {
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #B8B5AD;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    max-width: 100px;
+    height: auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.copyright {
+    color: var(--text-dark);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .benefit-item {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .cta-title {
+        font-size: 22px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .btn-submit {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .discount-text {
+        font-size: 18px;
+    }
+
+    .discount-highlight {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 20px;
+    }
+
+    .benefit-item {
+        font-size: 13px;
+    }
+
+    .cta-title {
+        font-size: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 20px;
+    }
+
+    .social-link img {
+        width: 35px;
+        height: 35px;
+    }
+}
